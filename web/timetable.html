@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<style>
+body {
+  background-color: burlywood;
+  align-content: center;
+}
+
+.container {
+  background-color: white;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+h3{
+    font-size: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/* TABLE STUFF */
+.table-fixed {
+  display: flex;
+  flex-flow: column;
+}
+
+.table-fixed thead {
+  display: block;
+}
+.table-fixed thead > tr {
+  display: flex;
+}
+.table-fixed thead > tr > th {
+  flex: 1;
+}
+
+.table-fixed tbody {
+  height: 300px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.table-fixed tbody {
+  display: block;
+}
+.table-fixed tbody > tr {
+  display: flex;
+}
+.table-fixed tbody > tr > td {
+  flex: 1;
+}
+
+/* 4 COLUMN SIZING */
+.table-4-col thead > tr > th:nth-child(1) {
+  flex: 0 0 15%;
+}
+.table-4-col thead > tr > th:nth-child(2) {
+  flex: 0 0 30%;
+}
+.table-4-col thead > tr > th:nth-child(3) {
+  flex: 0 0 25%;
+}
+.table-4-col thead > tr > th:nth-child(4) {
+  flex: 0 0 calc(100% - 15% - 30% - 25%);
+}
+
+/*NOTE: 16px scrollbar; 16px / 4 col = 4px per col*/
+.table-4-col tbody > tr > td:nth-child(1) {
+  flex: 0 0 calc(15% + 1px);
+}
+.table-4-col tbody > tr > td:nth-child(2) {
+  flex: 0 0 calc(30% + -2px);
+}
+.table-4-col tbody > tr > td:nth-child(3) {
+  flex: 0 0 calc(25% + -2px);
+}
+</style>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+<body translate="no">
+<div class="container">
+<h3>Online Classes Time Table</h3>
+<h6>For Second Semster Students only</h6>
+<div class="table-responsive">
+
+<table class="table table-striped table-bordered table-hover table-fixed table-4-col">
+<thead class="thead-dark">
+<tr>
+<th>Day</th>
+<th>10AM to 1PM</th>
+<th>1PM to 4PM</th>
+<th>4PM to 5PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MONDAY</td>
+<td>DSA</td>
+<td>Lunch Break</td>
+<td>DSA</td>
+</tr>
+<tr>
+<td>TUESDAY</td>
+<td>CALC-II</td>
+<td>Lunch Break</td>
+<td>CALC-II</td>
+</tr>
+<tr>
+<td>WEDNESDAY</td>
+<td>IGT</td>
+<td>Lunch Break</td>
+<td>IGT</td>
+</tr>
+<tr>
+<td>THURSDAY</td>
+<td>UPEM</td>
+<td>Lunch Break</td>
+<td>UPEM</td>
+</tr>
+<tr>
+<td>FRIDAY</td>
+<td>CTC</td>
+<td>Lunch Break</td>
+<td>CTC</td>
+</tr>
+<tr>
+<td>SATURDAY</td>
+<td>DSA | IGT | UPEM</td>
+<td>Lunch Break</td>
+<td>CALC-II</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</body>
+</html>
