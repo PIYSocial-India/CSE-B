@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="" />
+<meta name="apple-mobile-web-app-title" content="NoteFy">
+<link rel="shortcut icon" type="image/x-icon" href="" />
+<link rel="mask-icon" type="" href="" color="#111" />
+<title>STUDENT DETAILS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+body {
+  background-color:rgb(0, 0, 0);
+  margin-top:50px;
+}
+body * {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: orange;
+  color: black;
+  font-size: 1.5em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.table-users {
+  border: 5px solid orange;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+  max-width: calc(100% - 2em);
+  margin: 1em auto;
+  overflow: hidden;
+  width: 700px;
+}
+
+table {
+  width: 100%;
+}
+table td, table th {
+  color: #2b686e;
+  padding: 10px;
+}
+table td {
+  text-align: center;
+  vertical-align:middle;
+}
+table td:last-child {
+  font-size: 1.00em;
+  line-height: 2;
+  text-align: center;
+}
+table th {
+  background-color: lightblue;
+  font-weight: 300;
+}
+table tr:nth-child(2n) {
+  background-color: floralwhite;
+}
+table tr:nth-child(2n+1) {
+  background-color: #edf7f8;
+}
+
+@media screen and (max-width: 700px) {
+  table, tr, td {
+    display: block;
+  }
+
+  td:first-child {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100px;
+  }
+  td:not(:first-child) {
+    clear: both;
+    margin-left: 80px;
+    padding: 6px 20px 6px 10px;
+    position: relative;
+    text-align: center ;
+  }
+  td:not(:first-child):before {
+    color: #91ced4;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+  }
+  td:nth-child(2):before {
+    content: 'Name:';
+  }
+  td:nth-child(3):before {
+    content: 'Redg.no:';
+  }
+  td:nth-child(4):before{
+    content: 'Email-id :'
+  }
+ 
+
+  tr {
+    padding: 10px 0;
+    position: relative;
+  }
+  tr:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    background-color: transparent;
+    color: black;
+    font-size: 3em;
+    padding: 0;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+
+  td:first-child {
+    background-color: #c8e7ea;
+    border-bottom: 1px solid #91ced4;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 100%;
+  }
+  td:not(:first-child) {
+    margin: 0;
+    padding: 5px 1em;
+    width: 100%;
+  }
+  td:not(:first-child):before {
+    font-size: .8em;
+    padding-top: 0.3em;
+    position: relative;
+  }
+  td:last-child {
+    padding-bottom: 1rem !important;
+  }
+
+  tr {
+    background-color:  white !important;
+    border: 1px solid #6cbec6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+
+  .table-users {
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+  }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="table-users">
+<div class="header"> <u><strong>CSE-'B' STUDENT DETAILS </strong></u></div>
+<table cellspacing="0">
+<tr>
+<th>S.No</th>
+<th>Student's Name</th>
+<th>Registration No</th>
+ <th>Email-id</th>
+</tr>
+<tr>
+  <td> 1 </td>
+  <td> Partho Pratim Mitra </td>
+  <td> 1941012003 </td>
+  
+  <td><a href="mailto: ppratim02@gmail.com "> ppratim02@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 2 </td>
+  <td> Shaunak Sengupta </td>
+  <td> 1941012004 </td>
+  <td><a href="mailto: shaunak.tutai@gmail.com"> shaunak.tutai@gmail.com  </a></td>
+  <tr>
+   <tr>
+  <td> 3 </td>
+  <td> Aditya Kumar Patnaik </td>
+  <td> 1941012005 </td>
+  <td><a href="mailto: lastplayedon@gmail.com"> lastplayedon@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 4 </td>
+  <td> Sanket Sanjeeb Pattanaik </td>
+  <td> 1941012006 </td>
+  <td><a href="mailto: sanketpattanaik06@gmail.com"> sanketpattanaik06@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 5 </td>
+  <td> Swaroop Samantaray </td>
+  <td> 1941012018 </td>
+  <td><a href="mailto: rickyswaroop282@gmail.com"> rickyswaroop282@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 6 </td>
+  <td> Divya Mallick </td>
+  <td> 1941012052 </td>
+  <td><a href="mailto: dmrules017@gmail.com"> dmrules017@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 7 </td>
+  <td> Shubhodeep Roy </td>
+  <td> 1941012053 </td>
+  <td><a href="mailto: shubho133isro@gmail.com"> shubho133isro@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 8 </td>
+  <td> Divyanshu Srivastava </td>
+  <td> 1941012054 </td>
+  <td><a href="mailto: divyanshu84321@gmail.com"> divyanshu84321@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 9 </td>
+  <td> Sonali Pradhan </td>
+  <td> 1941012055 </td>
+  <td><a href="mailto: pradhansonali67@gmail.com"> pradhansonali67@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 10 </td>
+  <td> Kumar Shubham </td>
+  <td> 1941012056 </td>
+  <td><a href="mailto:kumarshubham26112002@gmail.com"> kumarshubham26112002@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 11 </td>
+  <td> Malvika Verma </td>
+  <td> 1941012057 </td>
+  <td><a href="mailto: malvika2ndmar2000@gmail.com"> malvika2ndmar2000@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 12 </td>
+  <td> Anjlina Deogam </td>
+  <td> 1941012096 </td>
+  <td><a href="mailto: anjlinadeogam143@gmail.com"> anjlinadeogam143@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 13 </td>
+  <td> Sanjay Barik </td>
+  <td> 1941012097 </td>
+  <td><a href="mailto: sanjaybarikd0298@gmail.com"> sanjaybarikd0298@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 14 </td>
+  <td> Rajesh Padhiary  </td>
+  <td> 1941012098 </td>
+  <td><a href="mailto: rajeshpadhiary2000@gmail.com"> rajeshpadhiary2000@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 15 </td>
+  <td> Ankit Chandra </td>
+  <td> 1941012099 </td>
+  <td><a href="mailto: ankitchandra9155@gmail.com"> ankitchandra9155@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 16 </td>
+  <td> Ayush Padhy </td>
+  <td> 1941012100 </td>
+  <td><a href="mailto: ayushpadhy2001@gmail.com"> ayushpadhy2001@gmail.com  </a></td>
+  <tr>
+   <tr>
+  <td> 17 </td>
+  <td> Ronak Pattnaik </td>
+  <td> 1941012102 </td>
+  <td><a href="mailto: pattnaikronak001@gmail.com"> pattnaikronak001@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 18 </td>
+  <td> Balaboina Raghu Yadav </td>
+  <td> 1941012115 </td>
+  <td><a href="mailto: deviling1999@gmail.com"> deviling1999@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 19 </td>
+  <td> Kumar Avikal </td>
+  <td> 1941012162 </td>
+  <td><a href="mailto: htihty47@gmail.com"> htihty47@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 20 </td>
+  <td> Md Zahiruddin Babar </td>
+  <td> 1941012174 </td>
+  <td><a href="mailto:iamzahiruddinbabar24@gmail.com"> iamzahiruddinbabar24@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 21 </td>
+  <td> Ananya Mishra </td>
+  <td> 1941012175 </td>
+  <td><a href="mailto: ananya.mishra1444@gmail.com"> ananya.mishra1444@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 22 </td>
+  <td> Uttpal Tripathy  </td>
+  <td> 1941012176 </td>
+  <td><a href="mailto: uttpal.2000@gmail.com"> uttpal.2000@gmail.com  </a></td>
+  <tr>
+   <tr>
+  <td> 23 </td>
+  <td> Jaysony Jena </td>
+  <td> 1941012177 </td>
+  <td><a href="mailto: jaysonyjena242@gmail.com"> jaysonyjena242@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 24 </td>
+  <td> Swayamprabha Mohapatra </td>
+  <td> 1941012203 </td>
+  <td><a href="mailto: swayam2018prabha@gmail.com"> swayam2018prabha@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 25 </td>
+  <td> Amit Agrawal </td>
+  <td> 1941012205 </td>
+  <td><a href="mailto: amitagrawal7735@gmail.com"> amitagrawal7735@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 26 </td>
+  <td> Suchismita Mishra </td>
+  <td> 1941012206 </td>
+  <td><a href="mailto: mishrasuchi2000@gmail.com"> mishrasuchi2000@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 27 </td>
+  <td> Deeptirekha Pani </td>
+  <td> 1941012207 </td>
+  <td><a href="mailto: deeptirekhapani017@gmail.com"> deeptirekhapani017@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 28 </td>
+  <td> Paritosh Pandey </td>
+  <td> 1941012208 </td>
+  <td><a href="mailto: fias007paritosh@gmail.com"> fias007paritosh@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 29 </td>
+  <td> Saswat Samal </td>
+  <td> 1941012227 </td>
+  <td><a href="mailto: samalsaswat0@gmail.com"> samalsaswat0@gmail.com </a></td>
+  <tr>
+   <tr>
+  <td> 30 </td>
+  <td> Rupali Swain </td>
+  <td> 1941012240 </td>
+  <td><a href="mailto: rupali.swain165@gmail.com"> rupali.swain165@gmail.com </a></td>
+  <tr>
+    <tr>
+      <td> 31 </td>
+      <td> Samikhya Patra </td>
+      <td> 1941012241 </td>
+      
+      <td><a href="mailto: samikshyapatra99@gmail.com"> samikshyapatra99@gmail.com  </a></td>
+      <tr>
+       <tr>
+      <td> 32 </td>
+      <td> Rishika Wadhera </td>
+      <td> 1941012242 </td>
+      <td><a href="mailto: rishika.wadhera6@gmail.com"> rishika.wadhera6@gmail.com </a></td>
+      <tr>
+       <tr>
+      <td> 33 </td>
+      <td> Akarsh Lohani </td>
+      <td> 1941012281 </td>
+      <td><a href="mailto: akarsh.lohani555@gmail.com"> akarsh.lohani555@gmail.com  </a></td>
+      <tr>
+       <tr>
+      <td> 34 </td>
+      <td> Abhinav Kumar </td>
+      <td> 1941012282 </td>
+      <td><a href="mailto: kr.abhinavariel20sept@gmail.com"> kr.abhinavariel20sept@gmail.com </a></td>
+      <tr>
+       <tr>
+      <td> 35 </td>
+      <td> Vishal Choubey </td>
+      <td> 1941012890 </td>
+      <td><a href="mailto: vishal1stjuly@gmail.com"> vishal1stjuly@gmail.com  </a></td>
+      <tr>
+       <tr>
+      <td> 36 </td>
+      <td> Debasish Samal </td>
+      <td> 1941012283 </td>
+      <td><a href="mailto: debasishsamal6644@gmail.com"> debasishsamal6644@gmail.com </a></td>
+      <tr>
+       <tr>
+      <td> 37 </td>
+      <td> Prabhanjan Mishra  </td>
+      <td> 1941012284 </td>
+      <td><a href="mailto: prabhanjanmishra.chotu@gmail.com"> prabhanjanmishra.chotu@gmail.com </a></td>
+      <tr>
+       <tr>
+      <td> 38 </td>
+      <td> D.Abhijeet </td>
+      <td> 1941012353 </td>
+      <td><a href="mailto: abhijeetdanda@gmail.com"> abhijeetdanda@gmail.com  </a></td>
+      <tr>
+       <tr>
+      <td> 39 </td>
+      <td> Pratyasha Mohanty </td>
+      <td> 1941012354 </td>
+      <td><a href="mailto: mohantydisha24@gmail.com"> mohantydisha24@gmail.com </a></td>
+      <tr>
+       <tr>
+      <td> 40 </td>
+      <td> Om Srikalinga </td>
+      <td> 1941012487 </td>
+      <td><a href="mailto: omsrikalinga.25@gmail.com"> omsrikalinga.25@gmail.com  </a></td>
+      <tr>
+        <tr>
+          <td> 41 </td>
+          <td> Raunak Senapati </td>
+          <td> 1941012488 </td>
+          <td><a href="mailto: princerihaan7@gmail.com"> princerihaan7@gmail.com </a></td>
+          <tr>
+           <tr>
+          <td> 42 </td>
+          <td> Chinmaya Biswal </td>
+          <td> 1941012489 </td>
+          <td><a href="mailto: cbiswal2002@gmail.com"> cbiswal2002@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 43 </td>
+          <td> Pritipadma Priyadarshini </td>
+          <td> 1941012490 </td>
+          <td><a href="mailto: pritijena051@gmail.com"> pritijena051@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 44 </td>
+          <td> Swati Parija </td>
+          <td> 1941012491 </td>
+          <td><a href="mailto: swatiparija521@gmail.com"> swatiparija521@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 45 </td>
+          <td> R Gupteswar Dora </td>
+          <td> 1941012798 </td>
+          <td><a href="mailto: droxidised@gmail.com"> droxidised@gmail.com </a></td>
+          <tr>
+           <tr>
+          <td> 46 </td>
+          <td> Bonthala Prem Anvesh </td>
+          <td> 1941012806 </td>
+          <td><a href="mailto: rickydcruz76@gmail.com"> rickydcruz76@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 47 </td>
+          <td> Charan Patnaik </td>
+          <td> 1941012807 </td>
+          <td><a href="mailto: charanpatnaik0@gmail.com"> charanpatnaik0@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 48 </td>
+          <td> Suvasish Gahan </td>
+          <td> 1941012994 </td>
+          <td><a href="mailto: subhasisgahan123@gmail.com"> subhasisgahan123@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 49 </td>
+          <td> Anjali Prasad </td>
+          <td> 1941012995 </td>
+          <td><a href="mailto: anjaliprasad215@gmail.com"> anjaliprasad215@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 50 </td>
+          <td> Shaikh Fayazul Arshad </td>
+          <td> 1941012996 </td>
+          <td><a href="mailto: fayazularshad047@gmail.com"> fayazularshad047@gmail.com </a></td>
+          <tr>
+          
+          
+          
+           <tr>
+          <td> 51 </td>
+          <td> Arpita Tripathy </td>
+          <td> 1941012997 </td>
+          <td><a href="mailto: tarpita2401@gmail.com"> tarpita2401@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 52 </td>
+          <td> Munmun Mahanto </td>
+          <td> 19410121019 </td>
+          <td><a href="mailto: munmunmahanto29@gmail.com"> munmunmahanto29@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 53 </td>
+          <td> Ankit Kumar </td>
+          <td> 19410121021 </td>
+          <td><a href="mailto: akr75272@gmail.com"> akr75272@gmail.com </a></td>
+          <tr>
+           <tr>
+          <td> 54 </td>
+          <td> Rounak Kant </td>
+          <td> 19410121022 </td>
+          <td><a href="mailto: rounakkant2000@gmail.com"> rounakkant2000@gmail.com </a></td>
+          <tr>
+           <tr>
+          <td> 55 </td>
+          <td> Trishala Mulia </td>
+          <td> 19410121054 </td>
+          <td><a href="mailto: trishalamulia@gmail.com"> trishalamulia@gmail.com </a></td>
+          <tr>
+           <tr>
+          <td> 56 </td>
+          <td> P Dheeraj Kumar </td>
+          <td> 19410121142 </td>
+          <td><a href="mailto: dk0674200@gmail.com"> dk0674200@gmail.com  </a></td>
+          <tr>
+           <tr>
+          <td> 57 </td>
+          <td> Ipsita Sahoo </td>
+          <td> 19410121169 </td>
+          <td><a href="mailto: sahooipsita411@gmail.com"> sahooipsita411@gmail.com  </a></td>
+          <tr>
+</table>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<style type="text/css">
+  .footer
+  {
+  margin-left: 573px;
+   padding: 10px;
+    cursor:pointer;
+    text-align: center;
+    display: inline-block;
+  }
+</style>
+
+
+  </body>
+
+
+</html>
