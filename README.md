@@ -1,6 +1,14 @@
 # CSE-B
 The Official App for CSE-B class of ITER, Siksha 'O' Anusandhan University. 
 
+[![h1](https://forthebadge.com/images/badges/built-for-android.svg)](https://piysocial.weebly.com)       
+[![h2](https://badgen.net/badge/License/MIT/green)](https://piysocial.weebly.com)  [![h3](https://badgen.net/badge/Download/CSE-B/red)](https://bit.ly/csebapp) [![h4](https://badgen.net/badge/BuiltFor/India/orange)](https://piysocial.weebly.com)
+
+## About 
+------------
+
+## Screenshots
+--------------
 
 ## Team
 
