@@ -1,4 +1,6 @@
 # CSE-B
+<img src="assets/cse_B.png" height=300> 
+
 The Official App for CSE-B class of ITER, Siksha 'O' Anusandhan University. 
 
 [![h1](https://forthebadge.com/images/badges/built-for-android.svg)](https://piysocial.weebly.com)       
