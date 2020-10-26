@@ -1,15 +1,219 @@
 <!DOCTYPE html>
-<html>
-<body>
-   // <h1>College Announcements</h1>
-  // <br>
-   // <br>
-  //  <br>
-   // <p>	No New Annoucement right now.<p>
-   // <br>
-   // <br>
-   // <br>
-   // <h6>Last Updated on: 22/10/2020 5:30PM</h6>
-    <iframe src="https://soadu.app.box.com/embed/s/rri6wtm1ffd6g3rs1jl9arzs542nusal?sortColumn=date&view=list" width="970" height="1900" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CSE-B Announcementser</title>
+  
+  
+  
+  
+<style>
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,900);
+
+body { background-color: black; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+p{
+  font-size: 10dp;
+}
+
+body {
+  font-family:'Lato', sans-serif !important;
+  font-size: 13pt !important;
+  font-weight: 300 !important;
+}
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+#myPageContent, section { 
+  height:100% !important; 
+  width:100% !important;
+}
+
+
+/* Slider */
+#textSlider.row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80% !important;
+}
+#textSlider div {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.iamCol {
+    text-align: right;
+  float: left;
+  font-weight: 300;
+  font-size:30pt;
+}
+.iamCol p:nth-child(2) { margin-top: -20pt !important; }
+.slideCol {
+  text-align: left;
+    overflow: hidden;
+  font-weight: 750;
+  font-size:45pt;
+  display: block;
+  white-space: nowrap;
+}
+.slideCol p { margin: 0 15px !important; }
+
+.scroller {
+   height: 70pt;
+   line-height: 70pt;
+   overflow: hidden;
+}
+
+.inner:before {
+  content: '[';
+  left: 0;
+}
+.inner:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+}
+.inner:after, .inner:before {
+  position: absolute;
+  color: #16a085;
+  top: 0;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.scroller .inner { animation: 10s normal infinite running scroll; }
+@keyframes scroll {
+   0%   {margin-top: 0px;}
+   15%  {margin-top: 0px;}
+
+   25%  {margin-top: -70pt;}
+   40%  {margin-top: -70pt;}
+   
+   50%  {margin-top: -140pt;}
+   65%  {margin-top: -140pt;}
+
+   75%  {margin-top: -210pt;}
+   90%  {margin-top: -210pt;}
+
+   100% {margin-top: 0px;}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+  #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+    .iamCol { text-align: center; font-size:20pt; }
+  .iamCol p { display: inline !important; }
+  .slideCol { font-size: 15pt; text-align: center; margin-top: -20px; }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width : 765px) {
+  #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+    .iamCol { text-align: center; font-size:25pt; }
+  .iamCol p { display: inline !important; }
+  .slideCol { font-size: 30pt; text-align: center; margin-top: -20px; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+  #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+  .iamCol { text-align: center; font-size:25pt; }
+  .iamCol p { display: inline !important; }
+  .slideCol { font-size: 30pt; text-align: center; margin-top: 5px; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+  #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+  .iamCol { text-align: right; font-size:25pt; }
+  .slideCol { font-size: 30pt; text-align: left; }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div id="textSlider" class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 iamCol">
+            <p>COLLEGE</p>
+            <p>ANNOUNCEMENTS</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 slideCol">
+            <div class="scroller">
+              <div class="inner">
+                <p>No Announcemnts till now!</p>
+                <p>All information about college</p>
+                <p>will be updated here...</p>
+                <p>Stay Tuned!</p>
+                <p>Stay Tuned!</p>
+              </div>
+            </div>
+          </div>
+     
+
+        </div>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  
+  
+      <script id="rendered-js" >
+    </script>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 iamCol">
+            <p>Last Updated On: 27/10/2020 | 1:30AM</p>
+          </div>
+
 </body>
+
 </html>
