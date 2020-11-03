@@ -1,219 +1,202 @@
-
-
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
 
-<head>
+        <link rel="apple-touch-icon" type="image/png" href="#" />
+        <meta name="apple-mobile-web-app-title" content="CSEB" />
 
-  <meta charset="UTF-8">
-  
-<link rel="apple-touch-icon" type="image/png" href="#" />
-<meta name="apple-mobile-web-app-title" content="CSEB">
+        <link rel="shortcut icon" type="image/x-icon" href="#" />
 
-<link rel="shortcut icon" type="image/x-icon" href="#" />
+        <link rel="mask-icon" type="" href="#" color="#111" />
 
-<link rel="mask-icon" type="" href="#" color="#111" />
+        <title>CSE-B ASSIGNMENTS</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat" rel="stylesheet" />
 
+        <style>
+            body {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                box-sizing: border-box;
+                background-color: #1b1b1e;
+                font-family: Montserrat, sans-serif;
+                color: #b1b1b3;
+            }
+            h1 {
+                text-align: center;
+            }
+            a {
+                text-align: center;
+                color: white;
+            }
+            p {
+                text-align: center;
+            }
+            h5 {
+                text-align: center;
+            }
+            ul,
+            ol {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
 
-  <title>CSE-B ASSIGNMENTS</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat" rel="stylesheet">
-  
-  
-  
-<style>
-body {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #1b1b1e;
-    font-family: Montserrat, sans-serif;
-    color: #b1b1b3;
-}
-h1{
-    text-align: center;
-}
-a{
-    text-align: center;
-    color: white;
-}
-p
-  {
-    text-align: center;
-  }
-h5{
-    text-align: center;
-}
-ul,
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+            .window {
+                width: 700px;
+                height: 500px;
+                margin: auto;
+                background-color: #000;
+                box-shadow: 0 0 25px -7px #000;
+            }
 
-.window {
-    width: 700px;
-    height: 500px;
-    margin: auto;
-    background-color: #000;
-    box-shadow: 0 0 25px -7px #000;
-}
+            .window-top {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                height: 30px;
+                background-color: #202020;
+            }
 
-.window-top {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    height: 30px;
-    background-color: #202020;
-}
+            .window__controls {
+                display: -webkit-inline-box;
+                display: inline-flex;
+            }
 
-.window__controls {
-    display: -webkit-inline-box;
-    display: inline-flex;
-}
+            .window__controls span {
+                width: 15px;
+                height: 15px;
+                margin-left: 10px;
+                border-radius: 50%;
+            }
 
-.window__controls span {
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    border-radius: 50%;
-}
+            .window__controls span:nth-child(1) {
+                background-color: #b22222;
+            }
+            .window__controls span:nth-child(2) {
+                background-color: #d6bf3e;
+            }
+            .window__controls span:nth-child(3) {
+                background-color: #4db434;
+            }
 
-.window__controls span:nth-child(1) {
-    background-color: #b22222;
-}
-.window__controls span:nth-child(2) {
-    background-color: #d6bf3e;
-}
-.window__controls span:nth-child(3) {
-    background-color: #4db434;
-}
+            .window__title {
+                -webkit-box-flex: 1;
+                flex: 1;
+                text-align: center;
+                color: #b1b1b3;
+            }
 
-.window__title {
-    -webkit-box-flex: 1;
-            flex: 1;
-    text-align: center;
-    color: #b1b1b3;
-}
+            .window-main {
+                padding: 0.5em;
+                color: #4e4e4e;
+            }
 
-.window-main {
-    padding: 0.5em;
-    color: #4e4e4e;
-}
+            .window-main ol {
+                counter-reset: item;
+                font-family: "Source Code Pro", monospace;
+            }
 
-.window-main ol {
-    counter-reset: item;
-    font-family: "Source Code Pro", monospace;
-}
+            .window-main ol li {
+                margin-bottom: 3px;
+            }
 
-.window-main ol li {
-    margin-bottom: 3px;
-}
+            .window-main ol li:before {
+                content: counter(item) "  ";
+                counter-increment: item;
+                padding: 0 10px;
+            }
 
-.window-main ol li:before {
-    content: counter(item) "  ";
-    counter-increment: item;
-    padding: 0 10px;
-}
+            .tag {
+                color: #4d86b9;
+            }
+            .attr {
+                color: #8dc6e3;
+            }
+            .val {
+                color: #c58b74;
+            }
+            .text {
+                color: #d4d4d4;
+            }
+            .comment {
+                color: #517343;
+            }
 
-.tag {
-    color: #4d86b9;
-}
-.attr {
-    color: #8dc6e3;
-}
-.val {
-    color: #c58b74;
-}
-.text {
-    color: #d4d4d4;
-}
-.comment {
-    color: #517343;
-}
+            @media only screen and (max-width: 601px) {
+                .window {
+                    width: 350px;
+                    height: 350px;
+                    font-size: 0.65em;
+                }
 
-@media only screen and (max-width: 601px) {
-    .window {
-        width: 350px;
-        height: 350px;
-        font-size: 0.65em;
-    }
+                .window__controls span {
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 5px;
+                }
 
-    .window__controls span {
-        width: 10px;
-        height: 10px;
-        margin-left: 5px;
-    }
+                .window-main ol li:before {
+                    padding: 0;
+                }
+            }
+        </style>
 
-    .window-main ol li:before {
-        padding: 0;
-    }
-}
-</style>
+        <script>
+            window.console = window.console || function (t) {};
+        </script>
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+        </script>
+    </head>
 
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+    <body translate="no">
+        <section class="window">
+            <div class="window-top">
+                <div class="window__controls">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="window__title"></div>
+            </div>
+            <div class="window-main">
+                <ol>
+                    <h1>ASSIGNMENTS QUESTIONS</h1>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h1>CSW Strings Assignment :</h1>
+                    <p>
+                        <a href="https://drive.google.com/file/d/1AQNn5-h2BRfAz2I7M7-I6BD2AMGGdHgj/view?usp=sharing">Open.</a>
 
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </p>
 
-</head>
+                    <h5>Last Updated On: 03/11/2020 10:55 AM</h5>
+                </ol>
+            </div>
+        </section>
+        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 
-<body translate="no" >
-  <section class="window">
-    <div class="window-top">
-        <div class="window__controls">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="window__title"> </div>
-    </div>
-    <div class="window-main">
-        <ol>
-            <h1> ASSIGNMENTS QUESTIONS </h1>
-    <br>   <br>
-  <br>
-  <br>
-          <h1>CSW Strings Assignment :  </h1>
-          <p> <a href="https://drive.google.com/file/d/1AQNn5-h2BRfAz2I7M7-I6BD2AMGGdHgj/view?usp=sharing">View it</a>
-
-   <br>
-  <br>
-  <br>   <br>
-  <br>
-  <br>  
-  <br>
-  <br>
-          <h5>Last Updated On: 03/11/2020  10:48AM</h5>
-
-        </ol>
-    </div>
-</section>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-
-  
-  
-      <script id="rendered-js" >
-
-    </script>
-
-  
-
-</body>
-
+        <script id="rendered-js"></script>
+    </body>
 </html>
- 
